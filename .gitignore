@@ -1,0 +1,22 @@
+# Dependencies
+/vendor/
+node_modules/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Database files
+*.sqlite
+*.sqlite3
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+# Local database configuration
+/config/database.php

@@ -1,0 +1,30 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#000; color:#ffcc00; font-family: 'Segoe UI', sans-serif; }
+.wrapper { display:flex; }
+.sidebar { width:200px; background:#111; height:100vh; position:fixed; border-right:2px solid #ffcc00; }
+.sidebar .logo { font-size:24px; padding:20px; text-align:center; border-bottom:1px solid #ffcc00; }
+.sidebar ul { list-style:none; padding:20px 0; }
+.sidebar ul li a { display:block; padding:12px 20px; color:#ffcc00; text-decoration:none; }
+.sidebar ul li a:hover { background:#ffcc00; color:#000; }
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+    min-height: 100vh;
+}
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 65px;
+    }
+}
+.top-bar { display:flex; justify-content:space-between; background:#111; padding:10px 20px; border-bottom:1px solid #ffcc00; margin-bottom:20px; }
+.btn-yellow { background:#ffcc00; color:#000; border:none; padding:8px 16px; cursor:pointer; border-radius:4px; }
+table { width:100%; border-collapse:collapse; background:#111; }
+th, td { border:1px solid #ffcc00; padding:8px; text-align:left; color:#ffcc00; }
+input, select, button { background:#222; color:#ffcc00; border:1px solid #ffcc00; padding:6px; margin:5px; }
+.pos-container { display:flex; gap:20px; }
+.cart-area, .products-area { flex:1; background:#111; padding:15px; border:1px solid #ffcc00; }
+.product-grid button { display:inline-block; margin:5px; padding:10px; background:#222; cursor:pointer; }
+.login-container { width:300px; margin:100px auto; background:#111; padding:30px; border:2px solid #ffcc00; text-align:center; }
+.error { color:red; }
+.stat-card { background:#111; padding:15px; border-left:4px solid #ffcc00; margin-bottom:10px; }
+.stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:15px; }
